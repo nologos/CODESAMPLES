@@ -1,4 +1,3 @@
-
 # PSCustomObjects and populating arrays
 
 $data = gci
