@@ -2,12 +2,12 @@
 
 $data = gci
 Measure-Command {
-    $a = foreach ($item in $data) {
-        [PSCustomObject]@{
-            item1 = $item.lastwritetime
-            item2 = $item.name
-        }
+$a = foreach ($item in $data) {
+    [PSCustomObject]@{
+        item1 = $item.lastwritetime
+        item2 = $item.name
     }
+}
 }
 ## TotalMilliseconds : 132.72
 
