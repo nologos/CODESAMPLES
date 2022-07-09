@@ -33,7 +33,11 @@ importcsv("alldatafromsubjects.csv",db.subjects)
 
 
 # search for a value
-pprint(db.subjects.find_one({"username" : "tenderlybae"}))
+pprint(db.subjects.find_one({"username" : "asmongold"}))
+
+# update value
+db.subjects.update_one({"username" : "asmongold"}, {"$set" : {"uploadday" : "0"}})
+
 
 
 #  search for wildcard
@@ -47,13 +51,13 @@ db.subjects.delete_one({'username': {'$regex': '.*destiny.*'}})
 
 
 # index a field before using sort commands
-db.subjects.create_index([('uploaddate', pymongo.ASCENDING)])
+db.subjects.create_index([('uploadday', pymongo.ASCENDING)])
 
 
 # select fields to return
-db.subjects.find({},{'_id':0,'username':1,'uploaddate':1})
+db.subjects.find({},{'_id':0,'username':1,'uploadday':1})
 
 
 
-printfields(db.subjects.find({},{'_id':0,'username':1,'uploaddate':1}))
+db.subjects.find({"uploadday" : str(day)},{'_id':0,'username':1})
 
