@@ -44,6 +44,7 @@ a{
 }
 .navigation h1{
     display: inline;
+    padding-left: 30px;
     
 }
 
@@ -75,8 +76,13 @@ img{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    width: 30px;
+    min-width: 40px;
+    width: auto;
+
     height: 20px;
+    display: inline-block;
+    margin: 3px;
+    
 }
 
 .textpadding{
