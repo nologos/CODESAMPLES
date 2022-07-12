@@ -3,53 +3,46 @@
     padding: 0;
 }
 
-body{
-    background: #aaa;
-    font-weight: 900;
-}
-.horizontallist{
-    list-style-type: none;
+/* fonts */
 
-}
+body{
+    text-align: center;
+    /* comic sans */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: 900;
+    background-color: #1c4946;
+    }
+
 
 a{
     color: #fff;    
     text-decoration: none;
 }
 
-.navigation h1{
-    text-align: center
-}
-
 .navigation{
     position: fixed;
-    padding-top: 20px;
-    font:  sans-serif;
     color: #fff;
-    display: inline-block;
     background-color: #1c4946;
     height: 50px;
     width: 100%;
 }
+
+
 .navigation ul{
-    float: right;
+    align-items: right;
     text-decoration: none;
     list-style: none;
     list-style-type: none;
 
 }
 .navigation li{
-    display: inline;
+    display: inline-flex;
     padding: 0px 10px;
 }
-.navigation h1{
-    display: inline;
-    padding-left: 30px;
-    
-}
 
-.inline{
-    display: inline-block;
+.navigation h1{
+    margin-right: 300px;
+    padding-left: 30px;
 }
 
 img{
@@ -60,16 +53,13 @@ img{
 }
 
 .getstarted{
-    padding-top: 20px;
     text-align: center;
     width: 100%;
     height: 400px;
-    background-color: #f2ede0;
-}
+    }
 
 .button{
     border: 1px solid #000;
-    background-color: #1c4946;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -78,35 +68,99 @@ img{
     cursor: pointer;
     min-width: 40px;
     width: auto;
-
     height: 20px;
     display: inline-block;
     margin: 3px;
+    background-color: #1c4946;
     
 }
 
-.textpadding{
-    padding-top: 20px;
-    text-align: center;
-    width: 100%;
-    height: 40px;
+.button-slim{
+    
+    border: 1px solid #000;
+    background-color: #1c4946;
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 250px;
+    height: 20px;
+    display: inline-block;
+    margin: 3px;
+    }
+
+.bgwhite{
+    background-color: #fff;
+}    
+
+.bgcream{
+    background-color: #f2ede0;
 }
+    
 
 .wallets{
-    padding-top: 20px;
-    text-align: center;
     width: 100%;
-    height: 400px;
-    background-color: #ffffff;
+    height: 500px;
 }
 
 .block{
-    float: left;
+    margin-top: 10px;
+    display: inline-block;
     width: 33%;
 }
+
 
 .centertext{
     text-align: center;
     margin: auto;
     width: 50%;
+}
+
+.navadjustment{
+    padding-top: 50px;
+}
+
+
+.waletimg{
+    max-width: 100px;
+    max-height: 100px;
+    max-height: 100%;
+    height: auto;  
+}
+
+
+#Wallets,#WhatisDogecoin,#Getstartednow {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+.whatisdogecoin{
+    padding-bottom: 100px;
+}
+
+.getstartednow{
+    padding-bottom: 100px;
+}
+
+.footer{
+    background-color: #0f2928;
+    height: 150px;
+}
+
+.socialmedia{
+    padding-top: 50px;
+    background-color: #1c4946;
+    padding-bottom: 50px;
+    
+}
+
+.copyright{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    
 }
