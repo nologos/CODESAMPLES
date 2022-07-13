@@ -93,10 +93,12 @@ img{
 
 .bgwhite{
     background-color: #fff;
+    width: 100%;
 }    
 
 .bgcream{
     background-color: #f2ede0;
+    width: 100%;
 }
     
 
@@ -160,7 +162,17 @@ img{
     padding-top: 5px;
     padding-bottom: 5px;
     color: #fff;
+    background-color: #0f2928;
     font-size: 12px;
     text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
     
+}
+
+
+.internaladjustment{
+    width: 1400px;
+    margin: auto;
 }
