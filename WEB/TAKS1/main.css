@@ -7,4 +7,67 @@
 body{
     /*  comic sans*/
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: 400;
+}
+
+.flex-master-container{
+    background-color: blue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.flex-master-container-row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    margin: auto;
+}
+
+.navigation{
+    width: 100%;
+    background: rgb(15, 110, 73);
+    height: 50px;
+    color: #fff;
+    
+}
+
+.navigation .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.navigation a{
+    color: #fff;
+}
+
+.navigation .container ul{
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.navigation .container ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation .container li{
+    padding: 0 10px;
+}
+
+.bgcream{
+    background-color: #f2ede0;
+}
+
+
+.block{
+    flex-basis: 20px;
+    background-color: red;
+    align-items: center;
 }

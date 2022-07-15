@@ -1,166 +1,154 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
+    <head>
+        <meta charset="utf-8" />
 
-    <title>Doge coin</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <i class="fas fa-clock"></i>
-    <nav id="pagetop">
-        <div style="display: flex" class="navigation" >
-            <a href='#getstarted'><h1>DOGE COIN</h1></a>
-            <ul>
-                <li><a href='#Wallets'>Wallets</a></li>
-                <li><a href='#WhatisDogecoin'>What is Dogecoin?</a></li>
-                <li><a href='#Getstartednow'>Get started now</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="navadjustment"></div>
-
-    <section id="getstarted" class="bgcream getstarted" >
-            <h1>1 Coin = 1 Coin</h1>
-            
-
-            <img src="https://dogecoin.com/assets/img/doge.png" alt="dogeimg ">
-            <p>easy template page</p>
-            <!-- two inline buttons -->
-            <div>
-                <a href="#Get started now" class="button">Get started now</a>
-                <a href="https://github.com/dogecoin/dogecoin.com" target="_blank" class="button" style="background-color: transparent; color: black">doge github</a>
+        <title>Doge coin</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body class="flex-master-container">
+        <nav id="pagetop" class="navigation">
+            <div class="container">
+                <!-- <a href='#getstarted' ><h1>DOGE COIN</h1></a> -->
+                <!-- javascript function button test -->
+                <a onclick="replaceH1()"><h1>DOGE COIN</h1></a>
+                <ul>
+                    <li><a href="#Wallets">Wallets</a></li>
+                    <li><a href="#WhatisDogecoin">What is Dogecoin?</a></li>
+                    <li><a href="#Getstartednow">Get started now</a></li>
+                </ul>
             </div>
-    </section>
-    <section id="Wallets" >
-        <div class="wallets bgwhite">
-            <div class="internaladjustment">
-                <h1>CHOSE YOUR WALLET</h1>
-                <p class="centertext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis accusantium consequatur similique fuga optio, iusto quasi delectus quae corporis architecto nisi rerum alias minima voluptate vitae nostrum quaerat quidem consectetur.</p>
+        </nav>
+        <div class="navadjustment"></div>
+        <div class="bgcream">
+            <section id="getstarted" class="container getstarted">
+                <h1>1 Coin = 1 Coin</h1>
+                <img src="https://dogecoin.com/assets/img/doge.png" alt="dogeimg " />
+                <p>easy template page</p>
+                <!-- two inline buttons -->
+                <div>
+                    <a href="#Get started now" class="button"> Get started now </a>
+                    <a href="https://github.com/dogecoin/dogecoin.com" target="_blank" class="button" style="background-color: transparent; color: black"> doge github </a>
+                </div>
+            </section>
+        </div>
+        <section id="Wallets" class="container wallets bgwhite">
+            <div>
+                <div class="internaladjustment">
+                    <h1>CHOSE YOUR WALLET</h1>
+                    <p class="centertext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis accusantium consequatur similique fuga optio, iusto quasi delectus quae corporis architecto nisi rerum alias minima voluptate vitae nostrum quaerat quidem consectetur.</p>
+                        <div class="flex-master-container-row">
+                            <div class="block">
+                                <h2>option1</h2>
+                                <p>cool wallet i like this one</p>
+                                <img class="waletimg" src="https://dogecoin.com/assets/img/multidoge.png" alt="windows" />
+                                <!-- 3 empty buttons -->
+                                <div class="flex-master-container">
+                                    <a href="#" class="button">Windows</a>
+                                    <a href="#" class="button">Linux</a>
+                                    <a href="#" class="button">macOS</a>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <h2>option2</h2>
+                                <p>cool wallet also good</p>
+                                <br />
+                                <img class="waletimg" src="https://dogecoin.com/assets/img/dogecoin-300.png" alt="two" />
+                                <!-- 5 empty buttons -->
+                                <div>
+                                    <a href="#" class="button">Windows</a>
+                                    <a href="#" class="button">Linux</a>
+                                    <a href="#" class="button">macOS</a>
+                                    <a href="#" class="button">Windows</a>
+                                    <a href="#" class="button">Linux</a>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <h2>option3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <br />
+                                <img class="waletimg" src="https://dogecoin.com/assets/img/google_play.png" alt="android" />
+                                <!-- 1 empty buttons -->
+                                <div>
+                                    <a href="#" class="button">Android</a>
+                                </div>
+                            </div>
+                        </div>    
+                </div>
+            </div>
+        </section>
+        <div class="bgcream">
+            <section id="WhatisDogecoin" class="container whatisdogecoin">
+                <h1>WHAT IS DOGECOIN?</h1>
+                <div>
+                    <p class="centertext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis accusantium consequatur similique fuga optio, iusto quasi delectus quae corporis architecto nisi rerum alias minima voluptate vitae nostrum quaerat quidem consectetur.</p>
+                    <img src="https://dogecoin.com/assets/img/dogecoin-300.png" alt="dogecoin" />
+                    <br />
+                </div>
+
+                <iframe style="margin-bottom: 30px" width="560" height="315" src="https://www.youtube.com/embed/2gxuIfNeTTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br />
+
                 <div class="block">
-                    <h2>option1 </h2>
-                    <p>cool wallet i like this one</p>
-                    <br>
-                    <img class="waletimg" src="https://dogecoin.com/assets/img/multidoge.png" alt="windows">
-                    <!-- 3 empty buttons -->
+                    <h2>fun and friendly</h2>
+                    <p>voluptatem natus id alias ipsum rerum dolore nesciunt ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                    <!-- three buttons -->
                     <div>
-                        <a href="#" class="button">Windows
-                        </a>
-                        <a href="#" class="button">Linux</a>
-                        <a href="#" class="button">macOS</a>
+                        <a href="#" class="button-slim">community</a>
+                        <a href="#" class="button-slim">discord</a>
+                        <a href="#" class="button-slim">education</a>
                     </div>
                 </div>
                 <div class="block">
-                    <h2>option2 </h2>
-                    <p>cool wallet also good</p>
-                    <br>
-                    <img class="waletimg" src="https://dogecoin.com/assets/img/dogecoin-300.png" alt="two">
-                    <!-- 5 empty buttons -->
+                    <h2>whos the dog?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                    <!-- two slim buttons -->
                     <div>
-                        <a href="#" class="button">Windows</a>
-                        <a href="#" class="button">Linux</a>
-                        <a href="#" class="button">macOS</a>
-                        <a href="#" class="button">Windows</a>
-                        <a href="#" class="button">Linux</a>
+                        <a href="#" class="button-slim">dog wiki</a>
+                        <a href="#" class="button-slim">Shiba link</a>
                     </div>
                 </div>
+            </section>
+        </div>
+
+        <section id="Getstartednow" class="container getstartednow bgwhite">
+            <div>
+                <h1>How to get started with dogecoin?</h1>
+
                 <div class="block">
-                    <h2>option3 </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                    <br>
-                    <img class="waletimg" style="height: 100px;" src="https://dogecoin.com/assets/img/google_play.png" alt="android">
-                    <!-- 1 empty buttons -->
-                    <div>
-                        <a href="#" class="button">Android</a>
-                    </div>
+                    <img src="https://dogecoin.com/assets/img/dogecoin_mobilewallet.png" alt="getstarted " />
                 </div>
+
+                <ol class="block">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Amet consectetur adipisicing elit</li>
+                    <li>Temporibus reprehenderit libero</li>
+                    <li>Tenetur atque molestias veniam</li>
+                    <li>Aspernatur earum porro dicta obcaecati</li>
+                    <li>Debitis ipsa porro</li>
+                    <li>Aliquam quo amet.</li>
+                    <li>Molestiae consequatur dicta quod?</li>
+                </ol>
             </div>
-        </div>
-    </section>
-    <section id="WhatisDogecoin" class="whatisdogecoin bgcream">
-        
-        <h1>WHAT IS DOGECOIN?</h1>
-        <div>
-            <p class="centertext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis accusantium consequatur similique fuga optio, iusto quasi delectus quae corporis architecto nisi rerum alias minima voluptate vitae nostrum quaerat quidem consectetur.</p>
-            <img src="https://dogecoin.com/assets/img/dogecoin-300.png" alt="dogecoin">
-            <br>
-        </div>
+        </section>
 
-        <iframe style="margin-bottom: 30px;" width="560" height="315" src="https://www.youtube.com/embed/2gxuIfNeTTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-
-        <div class="block">
-            <h2>fun and friendly </h2>
-            <p> voluptatem natus id alias ipsum rerum dolore nesciunt ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-            <!-- three buttons -->
+        <footer>
+            <!-- social media icons -->
+            <div class="socialmedia">
+                <br />
+                <a href="#Wallets" class="button">get wallet</a>
+                <i class="fa-facebook-f" aria-label="facebook"></i>
+                <a href="#" class="socialmediaicons"><img src="" alt="facebook" /></a>
+                <a href="#" class="socialmediaicons"><img src="" alt="twitter" /></a>
+                <a href="#" class="socialmediaicons"><img src="" alt="google" /></a>
+                <a href="#" class="socialmediaicons"><img src="" alt="reddit" /></a>
+                <a href="#" class="socialmediaicons"><img src="" alt="youtube" /></a>
+                <a href="https://www.dogecoin.com" class="button"> go to original </a>
+            </div>
             <div>
-                <a href="#" class="button-slim">community</a>
-                <a href="#" class="button-slim">discord</a>
-                <a href="#" class="button-slim">education</a>
+                <p class="copyright">Copyrgiht &copy; 2022 Dogecoin template</p>
             </div>
-        </div>
-        <div class="block">
-            <h2>whos the dog?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-            <!-- two slim buttons -->
-            <div>
-                <a href="#" class="button-slim">dog wiki</a>
-                <a href="#" class="button-slim">Shiba link</a>
-            </div>
-        </div>
-    
-
-    </section>
-
-
-    <section id="Getstartednow" class="getstartednow bgwhite">
-
-    <div>
-        <h1>How to get started with dogecoin?</h1>
-
-        <div class="block"><img src="https://dogecoin.com/assets/img/dogecoin_mobilewallet.png" alt="getstarted "></div>
-        
-        <ol class="block">
-            <li>Lorem ipsum dolor sit</li>
-            <li>Amet consectetur adipisicing elit</li>
-            <li>Temporibus reprehenderit libero</li>
-            <li>Tenetur atque molestias veniam</li>
-            <li>Aspernatur earum porro dicta obcaecati</li>
-            <li>Debitis ipsa porro</li>
-            <li>Aliquam quo amet. </li>
-            <li>Molestiae consequatur dicta quod?</li>
-        </ol>
-
-    
-    
-    </section>
-    
-    
-    
-    
-
-    
-    <footer class="footer">
-        <!-- copyright -->
-        
-        <!-- social media icons -->
-        <div class="socialmedia">
-            <br>
-            <a href="#Wallets" class="button">get wallet</a>
-            <i class="fa-facebook-f" aria-label="facebook"></i>
-            <a href="#" class="socialmediaicons"><img src="" alt="facebook"></a>
-            <a href="#" class="socialmediaicons"><img src="" alt="twitter"></a>
-            <a href="#" class="socialmediaicons"><img src="" alt="google"></a>
-            <a href="#" class="socialmediaicons"><img src="" alt="reddit"></a>
-            <a href="#" class="socialmediaicons"><img src="" alt="youtube"></a>
-            <a href="https://www.dogecoin.com" class="button">go to original</a>
-        </div>
-            <p class="copyright">Copyrgiht &copy; 2022 Dogecoin template</p>
-        </div>
-
-        
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
