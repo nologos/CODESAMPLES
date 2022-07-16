@@ -1,178 +1,216 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* fonts */
-
-body{
-    text-align: center;
-    /* comic sans */
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-weight: 900;
-    background-color: #1c4946;
-    }
-
-
-a{
-    color: #fff;    
+body {
+    /*  comic sans*/
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: 400;
+    /* align-items: center; */
+}
+a {
+    color: #fff;
     text-decoration: none;
 }
 
-.navigation{
-    position: fixed;
-    color: #fff;
-    background-color: #1c4946;
-    height: 50px;
-    width: 100%;
+.flex-master-container {
+    /* background-color: blue; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-
-.navigation ul{
-    align-items: right;
-    text-decoration: none;
-    list-style: none;
-    list-style-type: none;
-
-}
-.navigation li{
-    display: inline-flex;
-    padding: 0px 10px;
+.flex-master-container-row {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.navigation h1{
-    margin-right: 300px;
-    padding-left: 30px;
-}
-
-img{
-    max-width: 200px;
-    max-height: 200px;
-    max-height: 100%;
-    height: auto; 
-}
-
-.getstarted{
-    text-align: center;
-    width: 100%;
-    height: 400px;
-    }
-
-.button{
-    border: 1px solid #000;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    min-width: 40px;
-    width: auto;
-    height: 20px;
-    display: inline-block;
-    margin: 3px;
-    background-color: #1c4946;
-    
-}
-
-.button-slim{
-    
-    border: 1px solid #000;
-    background-color: #1c4946;
-    color: #fff;
-    padding: 5px;
-    border-radius: 2px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 250px;
-    height: 20px;
-    display: inline-block;
-    margin: 3px;
-    }
-
-.bgwhite{
-    background-color: #fff;
-    width: 100%;
-}    
-
-.bgcream{
-    background-color: #f2ede0;
-    width: 100%;
-}
-    
-
-.wallets{
-    width: 100%;
-    height: 500px;
-}
-
-.block{
-    margin-top: 10px;
-    display: inline-block;
-    width: 33%;
-}
-
-
-.centertext{
-    text-align: center;
+.container {
+    justify-content: center;
+    align-items: center;
+    max-width: 1110px;
     margin: auto;
-    width: 50%;
 }
-
 .navadjustment{
     padding-top: 50px;
 }
 
 
-.waletimg{
-    max-width: 100px;
-    max-height: 100px;
-    max-height: 100%;
-    height: auto;  
+.navigation {
+    position: fixed;
+    width: 100%;
+    background: rgb(15, 110, 73);
+    height: 50px;
+    color: #fff;
+
+}
+    
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation a {
+    color: #fff;
+}
+
+.navigation .container ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navigation .container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation .container li {
+    padding: 0 10px;
+}
+
+.bgcream {
+    background-color: #f2ede0;
+}
+
+.block {
+    flex: 1 0 100px;
+    margin: 5px;
+    /* background-color: red; */
+    /* flex-basis: 300px; */
+    /* flex-grow: 1; */
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #222; */
+    /* border-radius: 15px; */
+}
+
+/* .block .img */
+.waletimg {
+    max-width: 160px;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.buttoncontainer{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    /* min-width: 40px; */
+    align-items: center;
+    background-color: #1c4946;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    font-size: 30px;
+    height: 50px;
+    justify-content: center;
+    margin: 3px;
+    padding: 10px;
+}
+
+
+
+.button-slim {
+    align-items: center;
+    background-color: #1c4946;
+    border-radius: 5px;
+    border: 1px solid #222;
+    display: flex;
+    font-size: 15px;
+    height: 20px;
+    justify-content: center;
+    margin: 1px;
+    padding: 5px;
+}
+
+.buttonwhite {
+    border: 1px solid #fff;
+}
+
+
+.buttonblack {
+    border: 1px solid #000;
+    color: #000;
+    /* remove background */
+    background-color: transparent;
+}
+
+.getstartedimg {
+    flex-basis: 200px;
+    /* flex-grow: 1; */
+}
+.getstartedtext {
+    flex-basis: 200px;
+    flex: 1 1 200px;
+}
+
+.flextwo:nth-child(1) {
+    flex-grow: 1;
+}
+.flextwo:nth-child(2) {
+    flex-grow: 3;
+    min-width: 200px;
+}
+
+.footerstyle {
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: #1c4946;
+}
+
+.copyrightdiv {
+    margin-top: 10px;
+    background-color: #112c2a;
+    padding-bottom: 10px;
+}
+
+.sectionmargin {
+    padding-top: 10px;
+    margin-bottom: 40px;
 }
 
 
 #Wallets,#WhatisDogecoin,#Getstartednow {
     padding-top: 50px;
-    margin-top: -50px;
-}
-
-.whatisdogecoin{
-    padding-bottom: 100px;
-}
-
-.getstartednow{
-    padding-bottom: 100px;
-}
-
-.footer{
-    background-color: #0f2928;
-    height: 150px;
-}
-
-.socialmedia{
-    padding-top: 50px;
-    background-color: #1c4946;
-    padding-bottom: 50px;
-    
-}
-
-.copyright{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: #fff;
-    background-color: #0f2928;
-    font-size: 12px;
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    margin-top: auto;
-    
+    margin-top: 50px;
 }
 
 
-.internaladjustment{
-    width: 1400px;
-    margin: auto;
-}
+/* 
+
+# creates a flex container 
+display: flex cdg
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
