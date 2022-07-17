@@ -2,120 +2,122 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Doge coin</title>
         <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
         <script src="main.js"></script>
+        <title>Doge coin</title>
     </head>
-    <body class="flex-master-container">
-        <nav id="pagetop" class="navigation">
+    <body>
+
+
+        <nav id="pagetop" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <!-- <a href='#getstarted' ><h1>DOGE COIN</h1></a> -->
-                <!-- javascript function button test -->
-                <a onclick="replaceH1()"><h1>DOGE COIN</h1></a>
-                <ul>
-                    <li><a href="#Wallets">Wallets</a></li>
-                    <li><a href="#WhatisDogecoin">What is Dogecoin?</a></li>
-                    <li><a href="#Getstartednow">Get started now</a></li>
-                </ul>
+                <a onclick="replaceH1()" class="navbar-brand" href="#">Doge coin</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#Wallets">Wallets</a></li>
+                        <li class="nav-item"><a href="#WhatisDogecoin">What is Dogecoin?</a></li>
+                        <li class="nav-item"><a href="#Getstartednow">Get started now</a></li>
+                    </ul>
+            </div>
             </div>
         </nav>
-        <div class="navadjustment"></div>
-        <div class="bgcream">
-            <section id="getstarted" class=" sectionmargin container flex-master-container ">
+
+        <div></div>
+        <div>
+            <section id="getstarted">
                 <h1>1 Coin = 1 Coin</h1>
                 <img src="https://dogecoin.com/assets/img/doge.png" alt="dogeimg " />
                 <p>easy template page</p>
                 <!-- two inline buttons -->
-                <div class="flex-master-container-row">
-                    <a href="#Get started now" class="button"> Get started now </a>
-                    <a href="https://github.com/dogecoin/dogecoin.com" target="_blank" class="button buttonblack"> Doge github </a>
+                <div>
+                    <a href="#Get started now"> Get started now </a>
+                    <a href="https://github.com/dogecoin/dogecoin.com" target="_blank"> Doge github </a>
                 </div>
             </section>
         </div>
-        <section id="Wallets" class="container sectionmargin">
-            <div class="flex-master-container">
-                <div class="container flex-master-container">
+        <section id="Wallets">
+            <div>
+                <div>
                     <h1>CHOSE YOUR WALLET</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis accusantium consequatur similique fuga optio, iusto quasi delectus quae corporis architecto nisi rerum alias minima voluptate vitae nostrum quaerat quidem consectetur.</p>
                 </div>
-                <div class="flex-master-container-row">
-                    <div class="block flex-master-container">
+                <div>
+                    <div>
                         <h2>Option1</h2>
                         <p>cool wallet i like this one</p>
-                        <img class="waletimg" src="https://dogecoin.com/assets/img/multidoge.png" alt="windows" />
+                        <img src="https://dogecoin.com/assets/img/multidoge.png" alt="windows" />
                         <!-- 3 empty buttons -->
-                        <div class="buttoncontainer">
-                            <a href="#" class="button">Windows</a>
-                            <a href="#" class="button">Linux</a>
-                            <a href="#" class="button">MacOS</a>
+                        <div>
+                            <a href="#">Windows</a>
+                            <a href="#">Linux</a>
+                            <a href="#">MacOS</a>
                         </div>
                     </div>
-                    <div class="block flex-master-container">
+                    <div>
                         <h2>Option2</h2>
                         <p>cool wallet also good</p>
-                        <img class="waletimg" src="https://dogecoin.com/assets/img/dogecoin-300.png" alt="two" />
+                        <img src="https://dogecoin.com/assets/img/dogecoin-300.png" alt="two" />
                         <!-- 5 empty buttons -->
-                        <div class="buttoncontainer">
-                            <a href="#" class="button">Windows</a>
-                            <a href="#" class="button">Linux</a>
-                            <a href="#" class="button">MacOS</a>
-                            <a href="#" class="button">Windows</a>
-                            <a href="#" class="button">Linux</a>
+                        <div>
+                            <a href="#">Windows</a>
+                            <a href="#">Linux</a>
+                            <a href="#">MacOS</a>
+                            <a href="#">Windows</a>
+                            <a href="#">Linux</a>
                         </div>
                     </div>
-                    <div class="block flex-master-container">
+                    <div>
                         <h2>Option3</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                        <img class="waletimg" src="https://dogecoin.com/assets/img/google_play.png" alt="android" />
+                        <img src="https://dogecoin.com/assets/img/google_play.png" alt="android" />
                         <!-- 1 empty buttons -->
-                        <div class="buttoncontainer">
-                            <a href="#" class="button">Android</a>
+                        <div>
+                            <a href="#">Android</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="bgcream">
-            <section id="WhatisDogecoin" class="container flex-master-container sectionmargin">
+        <div>
+            <section id="WhatisDogecoin">
                 <h1>WHAT IS DOGECOIN?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis accusantium consequatur similique fuga optio, iusto quasi delectus quae corporis architecto nisi rerum alias minima voluptate vitae nostrum quaerat quidem consectetur.</p>
                 <iframe style="margin-bottom: 30px" width="1110.4" height="624" src="https://www.youtube.com/embed/2gxuIfNeTTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <br />
-
-                <div class="flex-master-container-row">
-                    <div class="block flex-master-container">
+                <div>
+                    <div>
                         <h2>Fun and friendly</h2>
                         <p>voluptatem natus id alias ipsum rerum dolore nesciunt ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                         <!-- three buttons -->
-                        <div class="flex-master-container">
-                            <a href="#" class="button-slim">Community</a>
-                            <a href="#" class="button-slim">Discord</a>
-                            <a href="#" class="button-slim buttonblack">Education</a>
+                        <div>
+                            <a href="#">Community</a>
+                            <a href="#">Discord</a>
+                            <a href="#">Education</a>
                         </div>
                     </div>
-                    <div class="block flex-master-container">
+                    <div>
                         <h2>Whos the dog?</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
                         <!-- two slim buttons -->
-                        <div class="flex-master-container ">
-                            <a href="#" class="button-slim">Dog wiki</a>
-                            <a href="#" class="button-slim buttonblack ">Shiba link</a>
+                        <div>
+                            <a href="#">Dog wiki</a>
+                            <a href="#">Shiba link</a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <section id="Getstartednow" class="container sectionmargin">
-            <div class="flex-master-container">
-                <div class="container flex-master-container">
+        <section id="Getstartednow">
+            <div>
+                <div>
                     <h1>How to get started with dogecoin?</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloribus nihil mollitia beatae magnam quam iusto ex saepe. Blanditiis excepturi hic nostrum adipisci tenetur, in ipsam voluptatibus facilis tempore ad.</p>
                 </div>
-                <div class="flex-master-container-row">
-                    <div class="block flex-master-container flextwo">
+                <div>
+                    <div>
                         <img src="https://dogecoin.com/assets/img/dogecoin_mobilewallet.png" alt="getstarted " />
                     </div>
-                    <ol class="block flex-master-container flextwo">
+                    <ol>
                         <li>Lorem ipsum dolor sit</li>
                         <li>Amet consectetur adipisicing elit</li>
                         <li>Temporibus reprehenderit libero</li>
@@ -128,28 +130,29 @@
                 </div>
             </div>
         </section>
-        <footer class="footerstyle">
+        <footer>
             <!-- social media icons -->
-            <div class="flex-master-container">
-                <div class="container flex-master-container-row">
-                    <a href="#Wallets" class="button buttonwhite">Get wallet</a>
+            <div>
+                <div>
+                    <a href="#Wallets">Get wallet</a>
 
-                    <div class="flex-master-container-row">
-                        <a href="#" class="socialmediaicons"><img src="" alt="facebook" /></a>
-                        <a href="#" class="socialmediaicons"><img src="" alt="twitter" /></a>
-                        <a href="#" class="socialmediaicons"><img src="" alt="google" /></a>
-                        <a href="#" class="socialmediaicons"><img src="" alt="reddit" /></a>
-                        <a href="#" class="socialmediaicons"><img src="" alt="youtube" /></a>
+                    <div>
+                        <a href="#"><img src="" alt="facebook" /></a>
+                        <a href="#"><img src="" alt="twitter" /></a>
+                        <a href="#"><img src="" alt="google" /></a>
+                        <a href="#"><img src="" alt="reddit" /></a>
+                        <a href="#"><img src="" alt="youtube" /></a>
                     </div>
-                    <a href="https://www.dogecoin.com" class="button buttonwhite">Go to original </a>
+                    <a href="https://www.dogecoin.com">Go to original </a>
                 </div>
             </div>
 
-            <div class="copyrightdiv">
-                <div class="container flex-master-container">
-                    <p class="copyright">Copyright &copy; 2022 Dogecoin template</p>
+            <div>
+                <div>
+                    <p>Copyright &copy; 2022 Dogecoin template</p>
                 </div>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
