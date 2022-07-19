@@ -1,0 +1,13 @@
+/* change the colors */
+
+
+$primary: #f2ede0;
+$secondary: #fff;
+$danger: #dd0000;
+$success: rgb(40, 136, 40);
+$warning: orange;
+$info: aqua;
+$dark: #1e4151;
+
+$body-bg: #f3f3f0;
+@import "node_modules/bootstrap/scss/bootstrap.scss"
