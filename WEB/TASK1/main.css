@@ -1,7 +1,9 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 body::before {
     display: block;
     content: '';
-    height: 60px;
+    height: 0px;
   }
   
   #map {
@@ -15,4 +17,30 @@ body::before {
       width: 50%;
     }
   }
-  
+
+#Wallets .minbutton{
+  min-width: 110px;
+} 
+
+#WhatisDogecoin .minbutton{
+  min-width: 130px;
+} 
+/*   
+  #Wallets,#WhatisDogecoin,#Getstartednow {
+    padding-top: 50px;
+    margin-top: 50px;
+} */ 
+
+/* black border */
+.bds{
+  border: 1px solid black;
+}
+
+
+/* media query for margin 100px above 768 pixels */
+@media (min-width: 1120px) {
+  .margin-100 {
+    margin-right: -130px;
+  }
+}
+
