@@ -32,7 +32,6 @@ const headingStyle = {
 }
 
 const hcontainer = {
-  // margin botom 5px
   margin: "1em",
   border: "1px solid black",
   backgroundColor: "lightblue",

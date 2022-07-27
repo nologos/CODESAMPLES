@@ -11,18 +11,13 @@ root.render(
   <React.StrictMode>
     <App />
     <div style={{backgroundColor:"pink"}}>
-      <Header title="title from index.js as a property"button1="hello"></Header>
+      <Header title="title from index.js as a property" button1="hello"></Header>
     </div>
     <Header />
-    <Button one="dir" two="testing" three="hello world" four="more buttons"
+    <Button one="random" two="red" three="blue" four="steel"
     />
 
   </React.StrictMode>
 );
 
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
