@@ -11,7 +11,7 @@ const getButtonStyle = (color) => {
     // if color is light, use white text, else use black text
     const colortest = isLight(color)
     // if true return btn-light, else return btn-dark
-    console.log(colortest + " if true will be black")
+    console.log(colortest + " if true will be white")
     return colortest ? 'btn-dark' : 'btn-light'
 }
 
@@ -47,8 +47,6 @@ const convertToRGB = (color) => {
         'mauve': '224,176,255',
         'turquoise': '64,224,208',
         'violet': '238,130,238',
-
-
     }
     return colors[color]
 }
@@ -90,8 +88,6 @@ const isLight = (color) => {
 
 
 const color = getRandomColor()
-// const color = "red"
-const btncolor = getRandomColor()
 const buttonclass = getButtonStyle(color)
 console.log(color)
 const rgbcolor = convertToRGB(color)
@@ -101,19 +97,15 @@ console.log(oppositecolor)
 
 
 
-
-
 const button = ({one,two,three,four}) => {
   return (
-
-
     <div className="" style={{backgroundColor:color}}>
         <div className='container'>
             <div className="row d-flex justify-content-center g-4 mt-5">
-                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle} ><i className="bi bi-apple"></i> {one} </a>
-                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle}><i className="bi bi-apple"></i> {two} </a>
-                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle}><i className="bi bi-apple"></i> {three} </a>
-                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle}><i className="bi bi-apple"></i> {four} </a>
+                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle} href="#1"><i className="bi bi-apple"></i> {one} </a>
+                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle} href="#1"><i className="bi bi-apple"></i> {two} </a>
+                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle} href="#1"><i className="bi bi-apple"></i> {three} </a>
+                <a type="button" className={`btn ${buttonclass} col-sm-5 col-md-5 m-1`} style={btnstyle} href="#1"><i className="bi bi-apple"></i> {four} </a>
             </div>
         </div>
     </div>

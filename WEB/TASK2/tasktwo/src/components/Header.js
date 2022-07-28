@@ -1,6 +1,7 @@
+import React from 'react'
 // rafce
 import PropTypes from 'prop-types'
-import Button from './Button'
+import Button from './FourButton'
 
 const Header = ({title, button1}) => {
   return (
