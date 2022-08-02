@@ -31,6 +31,11 @@ def importcsv(file,collection):
             collection.insert_one(doc)
 importcsv("alldatafromsubjects.csv",db.subjects)
 
+# quick print of all objects
+def printall(collection):
+    for doc in collection:
+        pprint(doc)
+
 
 # search for a value
 pprint(db.subjects.find_one({"username" : "asmongold"}))
@@ -46,8 +51,9 @@ for doc in results:
     pprint (doc)
 
 
-# delete a document
-db.subjects.delete_one({'username': {'$regex': '.*destiny.*'}})
+# delete a document # delete_one
+db.subjects.find_one({'username': {'$regex': '.*destiny.*'}})
+
 
 
 # index a field before using sort commands
