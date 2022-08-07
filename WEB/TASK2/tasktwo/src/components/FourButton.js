@@ -11,7 +11,6 @@ const getButtonStyle = (color) => {
     // if color is light, use white text, else use black text
     const colortest = isLight(color)
     // if true return btn-light, else return btn-dark
-    console.log(colortest + " if true will be white")
     return colortest ? 'btn-dark' : 'btn-light'
 }
 
@@ -118,7 +117,6 @@ const btnstyle = {
 }
 
 
-// default values for props
 button.defaultProps = {
     one:"1",
     two:"2",
