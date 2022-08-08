@@ -3,6 +3,8 @@ import Onebutton from "./components/oneButton";
 import Tasks from "./components/Tasks";
 import { useState } from "react";
 import NoTask from "./components/NoTask";
+import AddTask from "./components/AddTask";
+
 
 const onClick = () => {
   console.log("clicked");
@@ -31,8 +33,15 @@ const main = () => {
         <Onebutton color="yellow" text="press me easy" onClick={onClick} />
       </div>
       <div className="container">{tasks.length > 0 ? <Tasks tasks={tasks} deleteItem={deleteItem} completeItem={completeItem}></Tasks> : <NoTask></NoTask>}</div>
+      <div className="d-flex justify-content-between">
+        <AddTask 
+
+            
+        ></AddTask>
+      </div>
     </div>
   );
 };
+
 
 export default main;

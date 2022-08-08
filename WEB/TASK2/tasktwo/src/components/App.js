@@ -5,7 +5,6 @@ function App() {
   return (
       <div className="container d-flex justify-content-between">
         <h1>Hello {name}</h1>
-        
         <nav className="navbar navbar-expand-lg navbar-light">
           <a className="navbar-brand" href="#1"> </a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

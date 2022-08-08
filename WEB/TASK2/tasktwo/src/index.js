@@ -18,7 +18,7 @@ root.render(
       </div>
       <Header />
       <Button one="random" two="red" three="blue" four="steel" />
-      <p className="d-flex justify-content-around bg-light m-1">Main starting below</p>
+      <p className="d-flex justify-content-around bg-light my-1">Main starting below</p>
       <Main />
       <div style={{ marginTop: "30rem" }}>test</div>
     </div>
