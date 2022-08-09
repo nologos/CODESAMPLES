@@ -18,6 +18,10 @@ const main = () => {
     { id: 4, title: "Task 4", text: "Lorem ipsum  sit", completed: false },
   ]);
 
+  const AddNewTask = (task) => {
+    console.out(task)
+  }
+
   const deleteItem = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
@@ -35,6 +39,7 @@ const main = () => {
       <div className="container">{tasks.length > 0 ? <Tasks tasks={tasks} deleteItem={deleteItem} completeItem={completeItem}></Tasks> : <NoTask></NoTask>}</div>
       <div className="d-flex justify-content-between">
         <AddTask 
+        onAdd={AddNewTask}
 
             
         ></AddTask>
