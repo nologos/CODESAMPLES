@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Button from "./components/FourButton";
 
 import Main from "./main";
+import JsMapFunction from "./components/JsMapFunction";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,6 +19,8 @@ root.render(
       </div>
       <Header />
       <Button one="random" two="red" three="blue" four="steel" />
+
+      <JsMapFunction></JsMapFunction>
       <p className="d-flex justify-content-around bg-light my-1">Main starting below</p>
       <Main />
       <div style={{ marginTop: "30rem" }}>test</div>

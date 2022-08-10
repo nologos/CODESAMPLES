@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 
+
 const Task = ({ task, deleteItem, completeItem }) => {
   return (
     <div className="row border border-primary m-1" onDoubleClick={() => {completeItem(task.id)}}>
@@ -16,6 +17,9 @@ const Task = ({ task, deleteItem, completeItem }) => {
             </div>
           </div>
           <div>hello world -- {task.text}</div>
+          <div>{
+          task.startDate ? task.startDate.toLocaleString() : ""
+          }</div>
       </div>
     </div>
   );

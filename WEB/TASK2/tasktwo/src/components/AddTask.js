@@ -9,15 +9,31 @@ import { useState } from "react";
 const AddTask = ({ onAdd }) => {
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
-  const [time, setTime] = useState("");
   const [startDate, setStartDate] = useState(new Date());
-  const [startTime, setStartTime] = useState(new Date());
-
   const [completed, setCompleted] = useState(false);
 
+const onSubmit = (e) => {
+  e.preventDefault();
+if(title === "" || text === ""){
+  alert("Please enter a title and text");
+} else {
+  onAdd({
+    title,
+    text,
+    startDate,
+    completed,
+  });
+  setTitle("");
+  setText("");
+  setStartDate(new Date());
+  setCompleted(false);
+}
+}
+
+
   return (
-    <div className="container">
-      <form>
+    <div className="container" >
+      <form onSubmit={onSubmit}>
         <div className="mb-1">
           <label htmlFor="taskTitle" className="form-label">
             Task title
@@ -41,14 +57,15 @@ const AddTask = ({ onAdd }) => {
                selected={startDate}
                 date={""}
                 onChange={(date) => setStartDate(date)}
-                dateFormat="dd MMMM yyyy"
+                dateFormat="dd MMMM yyyy HH:mm"
                 showYearDropdown
+                showTimeSelect
                 scrollableYearDropdown
                 yearDropdownItemNumber={35}
                 />
             </div>
             <div className="col-6">
-              <DatePicker
+              {/* <DatePicker
               className="m-0"
                 selected={startTime}
                 onChange={(date) => {setStartTime(date)}}
@@ -57,7 +74,7 @@ const AddTask = ({ onAdd }) => {
                 timeIntervals={30}
                 timeFormat="HH:mm"
                 dateFormat="HH:mm"
-                />
+                /> */}
             </div>
           </div>
         </div>
@@ -67,14 +84,20 @@ const AddTask = ({ onAdd }) => {
             Check me out
           </label>
         </div>
-        <button type="submit" className="btn btn-primary mx-1" onClick={(e) => console.log(e)}>
+        <button type="submit" className="btn btn-primary mx-1">
           Submit
         </button>
-        {/* test button */}
-        <div type="submit" className="btn btn-primary mx-1" onClick={(e) => console.log(e.target.parentElement[2].value)}>
+        {/* test button mapReturnItems(e.target.parentElement) */}
+        <div type="submit" className="btn btn-primary mx-1" onClick={(e) => mapReturnItems(e.target.parentElement)}>
           Get Date Time Field
         </div>
-        <div type="submit" className="btn btn-primary mx-1" onClick={(e) => console.log(e)}>
+        <div type="submit" className="btn btn-primary mx-1" onClick={(e) => {
+          console.log(title);
+          console.log(text);
+          console.log(startDate);
+          console.log(completed);
+
+        } }>
           Test
         </div>
       </form>
@@ -82,4 +105,18 @@ const AddTask = ({ onAdd }) => {
   );
 };
 
+
+
 export default AddTask;
+
+
+
+
+const mapReturnItems = (Elements) => {
+  console.log(Elements.length);
+// map function to list elements values
+const listItems = Array.from(Elements).map((element) => {
+    return element.value;
+  });
+  console.log(listItems)
+}
