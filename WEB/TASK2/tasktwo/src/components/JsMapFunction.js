@@ -13,7 +13,7 @@ const JsMapFunction = () => {
       <h1>JsMapFunction</h1>
         {newNumbers.map((number) => {
           return (
-            <div key={number} className="col-1">
+            <div key={number} className="col-6 col-md-1 minWidth100">
                 <div className="p-1 bg-light border border-radius-1 border-color-dark d-flex justify-content-center align-items-center mb-0">
                   {number}
                 </div>

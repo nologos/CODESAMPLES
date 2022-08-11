@@ -61,3 +61,7 @@ body {
 .taskform{
   max-width: 400px;
 }
+
+.minWidth100{
+  min-width: 100px;
+}
