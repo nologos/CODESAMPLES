@@ -15,8 +15,16 @@ duplicate below from scratch using basic HTML & CSS, can reuse assets/
 https://dogecoin.com/
 https://github.com/dogecoin/dogecoin.com
 
+duplicate a simple website using bootstrap and flexbox, single page, simple
+1. https://dogecoin.com/
+2. https://everybootstrap.site/
+
+
 ## Task2:
 remake reddit in with focus on react.js
+
+
+
 
 # comparisons 
 
