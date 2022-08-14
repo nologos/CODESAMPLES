@@ -33,3 +33,14 @@ font-weight: 700;
 font-size: 2rem;
 font-weight: 400;
 }
+
+.float-right {
+    position: fixed;
+    right: -0px;
+    top: 270px;
+    transition: all 0.2s ease-in 0s;
+    z-index: 9999;
+    cursor: pointer;
+    }
+
+    
