@@ -37,7 +37,7 @@ font-weight: 400;
 .float-right {
     position: fixed;
     right: -0px;
-    top: 270px;
+    top: 50%;
     transition: all 0.2s ease-in 0s;
     z-index: 9999;
     cursor: pointer;
