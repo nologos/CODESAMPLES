@@ -36,11 +36,26 @@ font-weight: 400;
 
 .float-right {
     position: fixed;
+    margin-right: 100px;
     right: -0px;
     top: 50%;
-    transition: all 0.2s ease-in 0s;
-    z-index: 9999;
+    transform: translate(-50%, -50%);
     cursor: pointer;
     }
 
-    
+.btn-circle {
+    margin-right: 100px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 45px;
+    text-align: center;
+    padding: 10;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    }    
+
+.btn-font{
+    font-size: 4rem;
+    color : #aaa;
+}
