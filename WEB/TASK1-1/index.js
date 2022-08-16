@@ -25,12 +25,22 @@ function scrollToTop() {
 }
 
 document.body.addEventListener("wheel", function (event) {
-    event.preventDefault();
-  if (event.deltaY < 0) {
-    scrollToNextElement('up')
-  } else {
-    scrollToNextElement('down')
-  }
+  event.preventDefault();
+  event.deltaY < 0 ? scrollToNextElement('up') : scrollToNextElement('down');
 },{passive: false});
-document.body.style.overflow = "hidden";
 
+// // phone
+// var ts;
+// document.body.addEventListener("touchstart", function (event){ 
+//   event.preventDefault();
+//   ts = event.touches[0].clientY;
+// });
+
+// document.body.addEventListener("touchmove", function (event) {
+//   event.preventDefault();
+//   tm = event.touches[0].clientY;
+//   ts > tm ? scrollToNextElement("down") : scrollToNextElement("up");
+// },{passive: false});
+
+
+document.body.style.overflow = "hidden";
