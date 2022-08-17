@@ -27,17 +27,12 @@
   text-align: center;
   
 }
-.h1c {
-  font-size: 6vw;
+#body .h1 {
   font-weight: 700;
 }
-.h2c {
-  font-size: 3vw;
-  font-weight: 400;
-}
+
 .float-right {
   position: fixed;
-  
   right: 0;
   top: 50%;
   transform: translate(-10%, -50%);
@@ -45,7 +40,6 @@
 }
 
 .btn-font {
-  font-size: 6vw;
   color: #aaa;
 }
 
@@ -53,22 +47,3 @@
   width: 80%;
   max-height: 100vh;
 }
-/* @media (max-width : 380px){
-  .float-right {
-    position: fixed;
-    margin-right: 1px;
-    right: 0;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  .h1c {
-    font-size: 2vw;
-    font-weight: 700;
-  }
-  .h2c {
-    font-size: 1vw;
-    font-weight: 400;
-  }
-
-} */
