@@ -1,0 +1,11 @@
+name: website51
+services:
+  app:
+    image: httpd:2.4
+    ports:
+      - 80:80
+    working_dir: /usr/local/apache2
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+      - ./my-httpd.conf:/usr/local/apache2/conf/httpd.conf 
+      
