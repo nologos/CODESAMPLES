@@ -30,4 +30,21 @@ recordRoutes.route("/record").get(function (req, res) {
 //    });
 // });
 
+// this section returns a record based filter number
+recordRoutes.route("/record/:id").get(function (req, res) {
+  let db_connect = dbo.getDb("frontpage-passport");
+  let myquery = { filter: req.params.id };
+  db_connect
+    .collection("users")
+    .find(myquery)
+    .toArray(function (err, result) {
+      if (err) throw err;
+      res.json(result);
+    });
+  });
+
+  
+
+
+
 module.exports = recordRoutes;
