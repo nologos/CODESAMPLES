@@ -14,36 +14,35 @@ import React, { useEffect } from "react";
 // post using async await
 const Post = () => {
   // input field
-  const [input, setInput] = React.useState([]);
+  var [input, setInput] = React.useState([]);
 
   const handleChange = (e) => {
     setInput(e.target.value);
   };
 
-  const [items, setitems] = React.useState([
+  const [items, setItems] = React.useState([
     // { _id: "Loading..", name: "Loading..", email: "Loading..",password:"Loading.." }
   ]);
   React.useEffect(() => {
-    let url = 'http://localhost:5000/record/' + input;
-    console.log("this is "+ input)
-    console.log(url);
+      var url = "http://localhost:5000/record/"+ input;;
     fetch(url)
       .then((response) => response.json())
       .catch((error) => console.log(error))
-      .then(setitems);
+      .then(setItems);
   }, 
   //refresh when button is clicked
   [input]);
-  
+   
 
 
   if (!items) {
-    return <div>Loading...</div>;
+    return <div>Loading...
+      <input type="text" onChange={handleChange} placeholder="Enter Filter ID" />
+    </div>;
   }
 
   return (
     <div>
-      <h1>Posts</h1>
       <div className="m-4">
         <input type="text" onChange={handleChange} placeholder="Enter Filter ID" />
       </div>
@@ -51,8 +50,8 @@ const Post = () => {
         {items.map((item) => (
           <div key={item._id} className="col-4">
             <div className="p-1 card">
-            <h2>ID: {item._id}</h2>
-              <h2>name: {item.name}</h2>
+            <h4>ID: {item._id}</h4>
+              <p>name: {item.name}</p>
               <p>Email:{item.email}</p>
               <p>PW:{item.password}</p>
             </div>
@@ -65,15 +64,3 @@ const Post = () => {
 
 export default Post;
 
-// const Post = () => {
-//   return (
-//     <div className="">
-//       <section>counter</section>
-//       <section>timer</section>
-//       <section>title</section>
-//       <section>text</section>
-//     </div>
-//   );
-// };
-
-// export default Post;
