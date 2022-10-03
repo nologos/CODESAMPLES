@@ -23,22 +23,25 @@ const Post = () => {
   const [items, setItems] = React.useState([
     // { _id: "Loading..", name: "Loading..", email: "Loading..",password:"Loading.." }
   ]);
-  React.useEffect(() => {
-      var url = "http://localhost:5000/record/"+ input;;
-    fetch(url)
-      .then((response) => response.json())
-      .catch((error) => console.log(error))
-      .then(setItems);
-  }, 
-  //refresh when button is clicked
-  [input]);
-   
-
+  React.useEffect(
+    () => {
+      var url = "http://localhost:5000/record/" + input;
+      fetch(url)
+        .then((response) => response.json())
+        .catch((error) => console.log(error))
+        .then(setItems);
+    },
+    //refresh when button is clicked
+    [input]
+  );
 
   if (!items) {
-    return <div>Loading...
-      <input type="text" onChange={handleChange} placeholder="Enter Filter ID" />
-    </div>;
+    return (
+      <div>
+        <div>Loading...</div>
+        <div><input type="text" onChange={handleChange} placeholder="Enter Filter ID" /></div>
+      </div>
+    );
   }
 
   return (
@@ -50,17 +53,16 @@ const Post = () => {
         {items.map((item) => (
           <div key={item._id} className="col-4">
             <div className="p-1 card">
-            <h4>ID: {item._id}</h4>
+              <h4>ID: {item._id}</h4>
               <p>name: {item.name}</p>
               <p>Email:{item.email}</p>
               <p>PW:{item.password}</p>
             </div>
           </div>
-        ))}          
+        ))}
       </div>
     </div>
   );
 };
 
 export default Post;
-
