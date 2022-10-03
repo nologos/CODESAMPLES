@@ -40,3 +40,9 @@ app.get('/cors', (req, res) => {
 app.get('/cors/test', (req, res) => {
   res.send('ok');
 });
+
+// display hello world on root
+app.get("/", (req, res) => {
+  res.send("");
+}
+);
