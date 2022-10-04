@@ -43,6 +43,6 @@ app.get('/cors/test', (req, res) => {
 
 // display hello world on root
 app.get("/", (req, res) => {
-  res.send("");
+  res.send("ok");
 }
 );
