@@ -1,24 +1,23 @@
 import React from 'react'
 import './time.css'
 
+
+
 const Time = () => {
-
-setInterval(myFunction, 1000);
-
-function myFunction() {
-  let d = new Date();
-  document.getElementById("datetime").innerHTML=
-  d.getHours() + ":" +
-  d.getMinutes() + ":" +
-  d.getSeconds();
-}
-
-
+// display time in the top right corner
+    const [time, setTime] = React.useState(new Date().toLocaleTimeString());
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setTime(new Date().toLocaleTimeString());
+        }, 1000);
+        return () => clearInterval(interval); 
+    }, []); 
 
   return (
-    <div id="datetime" className='timebox'>Time</div>
-    
-  )
-}
+    <div className="timebox">{time}</div>
+  );
+};
+
+
 
 export default Time
