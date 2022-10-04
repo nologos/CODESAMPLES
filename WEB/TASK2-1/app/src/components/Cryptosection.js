@@ -50,6 +50,13 @@ const Cryptosection = () => {
   // const statea =[state]
   // console.log(statea)
 
+
+  // if api not responding return loadingf
+  if (!state3) {
+    return (<div className="container">API error... rate limit??</div>);
+  }
+
+
   return (
     <div className="container">
       <h1>Cryptosection</h1>
