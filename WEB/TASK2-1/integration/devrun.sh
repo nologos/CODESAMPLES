@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+# lolcal run function
+
 #function to start screens 
 #start_screen <screen_name> <project NPM command>
 function start_screen {
