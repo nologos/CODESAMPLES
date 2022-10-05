@@ -40,17 +40,17 @@ const Cryptosection = () => {
     fetch(url)
       .then((response) => response.json())
       .catch((error) => console.log(error))
-      .then((data) => setState3(data));
+      .then((data) => setState3(data))
+      .catch((error) => console.log(error));
   }, []);
+
+
+
 
   if (!state) {
     return <div>Loading data...</div>;
   }
-
-  // const statea =[state]
-  // console.log(statea)
-
-
+  
   // if api not responding return loadingf
   if (!state3) {
     return (<div className="container">API error... rate limit??</div>);
