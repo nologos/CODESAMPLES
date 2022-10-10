@@ -48,6 +48,7 @@ React.useEffect(
         <h2>Bitcoin Market Cap: {bitcoinPrice}</h2>
         <h2>Bitcoin Market Cap: {bitcoinMarketCapPercentage.toFixed(2)}%</h2>
         <table>
+            {/* spacing style  */}
             <tr>
                 <th>Rank</th>
                 <th>Name</th>
@@ -62,10 +63,20 @@ React.useEffect(
                     <td>{coin.market_cap_rank}</td>
                     <td>{coin.name}</td>
                     <td>{coin.symbol}</td>
-                    <td>{coin.market_cap}</td>
+                    {/* round to nearest million and add M as indicator and commas */}
+                    <td>{(coin.market_cap / 1000000).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}M</td>
                     <td>{coin.current_price}</td>
-                    <td>{coin.total_volume}</td>
-                    <td>{coin.price_change_percentage_24h}</td>
+                    <td>{(coin.total_volume / 1000000).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}M</td>
+                    {/* if negative style red, else green */}
+                    {coin.price_change_percentage_24h < 0 ? (
+                        <td style={{ color: "red" }}>
+                            {coin.price_change_percentage_24h.toFixed(2)}%
+                        </td>
+                    ) : (
+                        <td style={{ color: "green" }}>
+                            {coin.price_change_percentage_24h.toFixed(2)}%
+                        </td>
+                    )}
                 </tr>
             ))}
         </table>
