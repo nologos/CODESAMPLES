@@ -57,8 +57,7 @@ recordRoutes.route("/record/filter?name=:name&email=:email&phone=:phone").get(fu
   console.log(req.params.name);
   let db_connect = dbo.getDb("frontpage-passport");
   let myquery = { name: req.params.name, email: req.params.email, phone: req.params.phone };
-
-  db_connect
+ db_connect
     .collection("users")
     .find(myquery)
     .toArray(function (err, result) {

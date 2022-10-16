@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import CryptoSection from './components/Cryptosection';
 import Count from './components/Count';
 import Time from './components/Time';
+import Cryptoanalysis from './components/Cryptoanalysis';
 
 
 
@@ -17,6 +18,7 @@ root.render(
     <Header />
     <Count />
     <CryptoSection />
+    <Cryptoanalysis />
     <Posts />
   </React.StrictMode>
 );
