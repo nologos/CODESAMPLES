@@ -1,0 +1,1 @@
+pip list|ConvertFrom-String|select p1|% {pip install -U $_.p1}
