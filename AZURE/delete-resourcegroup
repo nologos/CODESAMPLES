@@ -1,0 +1,6 @@
+# to check the resource groups in your seleceted subscription
+az group list --query "[][name]" -o tsv
+
+# to delete a resource group without prompt, x is the name of the resource group
+az group delete --name x -y
+
