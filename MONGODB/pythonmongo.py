@@ -67,3 +67,12 @@ db.subjects.find({},{'_id':0,'username':1,'uploadday':1})
 
 db.subjects.find({"uploadday" : str(day)},{'_id':0,'username':1})
 
+# export all json
+
+
+cursor = db.subjects.find({})
+records = list(cursor)
+
+
+with open('data.json', 'w') as outfile:
+    json.dump(records, outfile, indent=4, sort_keys=True, default=str)
