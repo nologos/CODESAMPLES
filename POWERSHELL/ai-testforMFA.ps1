@@ -1,4 +1,5 @@
 # untested copilot script
+# TODO: pipe not accepted, confirm if disabled mfas error action is stop
 # Check if MSOnline module is installed and connect to the service
 if (-not (Get-Module -ListAvailable -Name MSOnline)) {
   Install-Module MSOnline -Repository PSGallery -AllowClobber -Force
